@@ -1,0 +1,75 @@
+body{
+    min-height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:  hsl(185, 75%, 39%);
+    position: relative;
+}
+body::before{
+    content: url("images/bg-pattern-top.svg");
+    /* width: 5%;
+    height: 5%; */
+    position: absolute;
+    top: -530px;
+    left: -350px;
+
+    
+}
+body::after{
+    content: url("images/bg-pattern-bottom.svg");
+    /* width: 5%;
+    height: 5%; */
+    position: absolute;
+    bottom: -650px;
+    right: -300px;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+#card{
+    background-color: #fff;
+    color: gray;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 330px;
+    z-index: 1;
+}
+#profile-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#profile-img img{
+    position: relative;
+    top: -50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: -40px;
+    border: 5px solid #fff;
+}
+#name{
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+#line{
+    height: 1px;
+    background-color: lightgrey;
+}
+#stats{
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+#followers, #likes, #photos{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+span{
+    color: #000;
+    font-size: 18px;
+    font-weight: 1000;
+}
